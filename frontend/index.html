@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTack</title>
+    <link rel="shortcut icon" href="./photos/cropedone-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Belanosima:wght@400;600;700&family=Cherry+Bomb+One&family=Gasoek+One&family=Moirai+One&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+
+        video {
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+
+        body {
+            font-family: 'Belanosima', sans-serif;
+            background-color: black;
+        }
+
+        div {
+            position: absolute;
+            top: 35%;
+            left: 40%;
+            display: grid;
+ 
+        }
+
+        div>button {
+ 
+            font-family: 'Belanosima', sans-serif;
+            font-size: 30px;
+            width: 300px;
+            padding: 10px;
+            border-radius: 1.5rem;
+            backdrop-filter: blur(1px);
+            background-color: rgba(214, 204, 195, 0.337);
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        #main2 {
+            margin-top: 35px;
+        }
+
+        /* #spn{
+            height:20px
+        } */
+    </style>
+</head>
+
+<body>
+    <video width="320" height="240" autoplay loop muted>
+        <source src="./photos/flowers_-_20952 (540p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div>
+        <button onclick="window.location.href=`./aiPlayer.html`" id="main1">Play With Computer</button>
+        <!-- <div id="spn"></div> -->
+        <button onclick="window.location.href=`http://localhost:3000/`"  id="main2">Play With Friends</button>
+    </div>
+</body>
+
+</html>

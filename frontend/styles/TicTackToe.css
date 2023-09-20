@@ -1,0 +1,530 @@
+     * {
+         margin: 0;
+         font-family: 'Belanosima', sans-serif;
+     }
+
+
+
+     #main {
+         display: none;
+         /* display: flex; */
+         background-image: url("https://e1.pxfuel.com/desktop-wallpaper/513/414/desktop-wallpaper-clean-water-water.jpg");
+         /* background-repeat: no-repeat; */
+         background-size: cover;
+         /* This will make the image cover the entire div */
+         background-position: center;
+         /* This will center the image horizontally and vertically */
+         background-repeat: no-repeat;
+     }
+
+
+     #tictack {
+         /* border: 1px solid rgb(244, 239, 238); */
+         height: 98vh;
+         /* width: 50%; */
+         flex-grow: 1;
+     }
+
+     table {
+         /* border: 2px solid blue; */
+         height: 200px;
+         width: 200px
+     }
+
+     td {
+         border: 1px solid black;
+     }
+
+
+     #underLine{
+        width: 10px;
+        border: 3px solid white;
+        background-color: rgba(128, 128, 128, 0.084);
+        backdrop-filter: blur(2px);
+        cursor: col-resize;
+     }
+     #subunder{
+        width: 1px;
+        /* border: 2px solid white; */
+        background-color: white;
+        height: 100%;
+        margin-left: 50%;
+     }
+     #chat {
+         /* border: 2px solid rgb(191, 234, 37); */
+         /* width: 50%; */
+         flex-grow: 1;
+         height: 98vh;
+     }
+
+     #chatNav {
+         color: black;
+         height: 60px;
+         /* border: 2px solid rgb(198, 42, 68); */
+         width: 99%;
+         height: 7%;
+         background-color: rgba(255, 255, 255, 0.332);
+         backdrop-filter: blur(10px);
+         margin-bottom: 10px;
+     }
+
+     #chatNav>div {
+         display: flex;
+         justify-content: space-between;
+         width: 80%;
+         /* border: 2px solid blue; */
+         margin-left: 5%;
+         /* margin-top: 1%; */
+         font-size: 30px;
+         /* height: 100%; */
+     }
+
+     #chatNav button {
+         margin-top: 10px;
+         background-color: rgba(255, 255, 255, 0.291);
+         backdrop-filter: blur(10px);
+     }
+
+     #input {
+         /* border: 3px solid red; */
+         margin-top: 2%;
+         height: 7%;
+         justify-content: space-between;
+     }
+
+     #input>div {
+         height: 90%;
+         /* backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.391); */
+         display: flex;
+         justify-content: space-evenly;
+         /* font-size: 35px; */
+         margin-left: 2%;
+         /* border: 2px solid rgb(21, 170, 58); */
+         width: 95%;
+     }
+
+     #input>div>input {
+         width: 80%;
+         border-radius: 1.5rem;
+         background-color: rgba(255, 255, 255, 0.332);
+         backdrop-filter: blur(10px);
+         height: 40px;
+         margin-top: -5px;
+     }
+
+     #input button {
+         background-color: rgba(255, 255, 255, 0.332);
+         backdrop-filter: blur(10px);
+     }
+
+     #chatCont {
+         /* border: 2px solid red; */
+         height: 550px;
+         overflow-y: scroll;
+     }
+
+     #msg::placeholder {
+         color: rgb(21, 11, 11);
+         font-size: 26px;
+         margin-left: 10px;
+         /* font-weight: 5px; */
+     }
+
+     #msg {
+         font-size: 30px;
+     }
+
+     #EnTrance {
+         background-color: black;
+         height: 100vh;
+         color: white;
+         display: grid;
+         place-items: center;
+
+     }
+
+     #SecName,
+     #firstName {
+         /* display: none; */
+         border: 2px solid white;
+         height: 200px;
+         width: 300px;
+         /* display: grid;
+        place-items: center; */
+     }
+
+     #SecName {
+         display: none;
+     }
+
+     #SecName>h4,
+     #firstName>h4 {
+         font-size: 25px;
+         margin-top: 20px;
+         margin-left: 20px;
+     }
+
+     #SecName>input,
+     #firstName>input {
+         height: 40px;
+         font-size: 25px;
+         border-radius: 1.5rem;
+         margin-top: 10px;
+         margin-left: 20px;
+     }
+
+     #secClick,
+     #firstBt {
+         width: 60px;
+         margin-top: 40px;
+         margin-left: 120px;
+         border-radius: 1.5rem;
+         height: 30px;
+         cursor: pointer;
+     }
+
+     #secClick,
+     #firstBt:hover {
+         background-color: rgb(24, 23, 23);
+         color: white;
+     }
+
+     #link {
+         margin-top: -110px;
+         display: none;
+         padding: 5px;
+
+     }
+
+     #link>div {
+         display: flex;
+         margin-top: 20px;
+         background-color: rgb(52, 54, 55);
+         width: 460px;
+         padding: 5px;
+         cursor: pointer;
+     }
+
+     #link>div>p {
+
+         padding: 5px;
+     }
+
+     #link>p {
+         font-size: 30px;
+     }
+
+     #link button {
+         background-color: rgba(42, 42, 42, 0.366);
+         border: none;
+         font-size: 20px;
+         display: none;
+         cursor: pointer;
+     }
+
+     #link>div:hover>button {
+         display: block;
+     }
+
+
+
+
+     #mainL {
+         text-align: left;
+         margin-bottom: 10px;
+     }
+
+
+     #mainR {
+         /* background-color: aqua; */
+         text-align: right;
+         margin-bottom: 10px;
+     }
+
+     #right {
+
+         display: inline-block;
+         background-color: rgba(107, 88, 88, 0.186);
+         backdrop-filter: blur(10px);
+         border: 1px solid white;
+         /* border-radius: 1.5rem; */
+         padding-left: 15px;
+         padding-right: 15px;
+         border-radius: 1.2rem;
+     }
+
+     .Rcls {
+         display: flex;
+         color: rgb(205, 195, 195);
+         justify-content: space-between;
+         font-weight: lighter;
+     }
+
+     #spn {
+         width: 10px
+     }
+
+     #RMM {
+         font-size: 25px;
+         color: white;
+     }
+
+
+     /* video css */
+
+     
+    #videoContainer {
+        display: none;
+        height: 99vh;
+        width: 50%;
+        /* border: 2px solid rgb(255, 119, 0) ; */
+        float: right;
+    }
+
+    #remote {
+        /* display: none;*/
+        width: 100%;
+        height: 100%;
+        /* border: 2px solid rgb(43, 255, 0); */
+        background-color: black;
+    }
+
+    #local {
+        position: absolute;
+        height: 35%;
+        width: 20%;
+        /* border: 2px solid red; */
+        top: 0;
+        right: 0;
+        background-color: black;
+    }
+
+    #callDisconnect {
+        display: none;
+        position: absolute;
+        right: 23%;
+        bottom: 10%;
+        background-color: red;
+        /* border: 2px solid rgb(9, 8, 8); */
+        border-radius: 50%;
+        padding: 15px;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* this all about outgoing call */
+
+    #outGoing {
+        font-size: 20px;
+        display: grid;
+        place-items: center;
+        position: absolute;
+        width: 50%;
+        height: 99vh;
+        /* border: 2px solid rgb(125, 205, 28); */
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(10px);
+        color: black;
+        display: none;
+
+    }
+
+    #outGoing>div {
+        height: 20px;
+        font-size: 30px;
+    }
+
+    #outGoing>p {
+        color: white;
+        font-size: 20px;
+    }
+
+    #outGoing>div>div {
+        font-size: 35px;
+        display: flex;
+        /* border: 2px solid green; */
+        justify-content: space-between;
+        width: 30px;
+        margin-top: 10px;
+    }
+
+
+    /* this all about incoming call */
+
+    #inComing {
+
+        width: 50%;
+        height: 99vh;
+        float: right;
+        /* border: 2px solid black; */
+        display: grid;
+        place-items: center;
+        background-color: rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(10px);
+        color: white;
+        display: none;
+    }
+
+    #inComing>div {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        height: 80%;
+    }
+
+    #inComing>div>p {
+        font-size: 25px;
+    }
+
+    .animated-gif {
+        height: 160px;
+        width: 120px;
+        margin-top: 50px;
+    }
+
+    #accept {
+        background-color: green;
+        font-size: 25px;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: white;
+        margin-top: 80px;
+        cursor: pointer;
+    }
+
+    #p {
+        margin-top: 30px;
+    }
+
+    #out {
+        width: 100%;
+        /* height: 100px; */
+    }
+
+    #input>div>button{
+        cursor: pointer;
+    }
+
+
+
+
+
+/* tictack css */
+
+td {
+    border: 1px solid rgb(28, 25, 25);
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    font-size: 70px;
+}
+
+table {
+    margin-top: 150px;
+    width: 70%;
+    background-color: rgba(202, 173, 173, 0.197);
+    backdrop-filter: blur(6px);
+    color: rgb(3, 2, 2);
+}
+
+.selectSym {
+    display: none;
+    backdrop-filter: blur(2px);
+    background-color: rgba(11, 9, 9, 0.222);
+    width: 40%;
+    top: 200px;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+    border: 2px solid rgb(42, 41, 96);
+}
+
+.selectSym button {
+    /* font-family: "Comic Sans MS", cursive, sans-serif; */
+    font-family: 'Belanosima', sans-serif;
+    font-size: 50px;
+    width: 70px;
+    background: white;
+    border: 1px solid rgb(15, 14, 14);
+    color: black;
+    cursor: pointer;
+
+}
+
+#tictack {
+    /* width: 50%; */
+    /* border: 2px solid white; */
+    height: 100%;
+    display: grid;
+    place-items: center;
+    z-index: 0;
+
+}
+
+.replayb {
+    position: absolute;
+    z-index: 6564;
+    backdrop-filter: blur(7px);
+    /* background-color: rgba(191, 170, 170, 0.131);  */
+    background-color: #90898942;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    border-radius: 1.5rem;
+    border: 0.5px solid rgb(14, 13, 13);
+    color: rgb(14, 9, 9);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.replayb:hover {
+    backdrop-filter: blur(7px);
+    background-color: #90898971;
+}
+
+#spn {
+    height: 20px;
+    /* border: 2px solid red; */
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+
+.endgame {
+    display: none;
+    top: 200px;
+    border: 2px solid black;
+    /* right: 0%; */
+    font-size: 50px;
+    position: absolute;
+    padding: 10px;
+    color: white;
+    /* background-color: rgba(31, 71, 38, 0.585);
+    background-color: rgba(190, 77, 77, 0.43); */
+}
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>TicTacToe-Play With Computer</title>
+	<link rel="shortcut icon" href="./photos/cropedone-removebg-preview.png" type="image/x-icon">
+	<link rel="stylesheet" href="./styles/aiPlayer.css">
+
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Belanosima:wght@400;600;700&family=Cherry+Bomb+One&family=Gasoek+One&family=Moirai+One&display=swap"
+		rel="stylesheet">
+
+
+
+</head>
+
+<body>
+ 
+	<video width="320" height="240" autoplay loop muted>
+		<source src="./photos/golden-48569.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+
+
+	<table>
+		<tr>
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+	<div class="endgame">
+		<div class="text"></div>
+	</div>
+
+	<div class="selectSym">
+		<p>Select symbol:</p>
+		<div id="spn"></div>
+		<button onClick="selectSym('X')">X</button>
+		<button onClick="selectSym('O')">O</button>
+	</div>
+
+
+	<button class="replayb" onClick="startGame()">Replay</button>
+
+
+	<div class="alert">
+        Sorry you can not Win😹 
+		because its made by payal😁
+		&nbsp;
+        <button onclick="this.parentElement.style.display='none'">X</button>
+    </div>
+
+
+	<script src="../backend/aiPlayer.js"></script>
+
+</body>
+
+</html>
