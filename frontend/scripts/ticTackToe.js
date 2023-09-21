@@ -1,4 +1,4 @@
-let socket = io("http://localhost:3000/", { transports: ["websocket"] })
+let socket = io("https://tic-fglh.onrender.com/", { transports: ["websocket"] })
 
 const myPeer = new Peer()
 let url = window.location.href
