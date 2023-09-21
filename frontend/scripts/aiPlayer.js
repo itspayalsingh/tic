@@ -94,8 +94,8 @@ function gameOver(gameWon) {
   for (let i = 0; i < cells.length; i++) {
     cells[i].removeEventListener('click', turnClick);
   }
-  declareWinner(gameWon.player === huPlayer ?   `<img src="../frontend/photos/youwin.png" alt="">` :
-  `<img src="../frontend/photos/youlos-transformed-fotor-bg-remover-2023072713829.png" alt=""></img>`);
+  declareWinner(gameWon.player === huPlayer ?   `<img src="./photos/youwin.png" alt="">` :
+  `<img src="./photos/youlos-transformed-fotor-bg-remover-2023072713829.png" alt=""></img>`);
 }
 
 
@@ -118,7 +118,7 @@ function checkTie() {
       cell.style.backgroundColor = "rgba(191, 170, 170, 0.131)";
       cell.removeEventListener('click', turnClick, false);
     }
-    declareWinner(`<img src="../frontend/photos/ezgif.com-video-to-gif.gif" alt="">`);
+    declareWinner(`<img src="./photos/ezgif.com-video-to-gif.gif" alt="">`);
     return true;
   }
   return false;

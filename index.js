@@ -8,12 +8,21 @@ const { v4: uuidv4 } = require("uuid")
 const path = require("path")
 const { userJoin, userLeave, userCheck, current, format } = require("./user")
 
-
-
-app.get("/", (req, res) => {
+app.use(express.static(path.join(__dirname, './frontend')));
+app.get("/TicTack", (req, res) => {
     res.redirect(`/${uuidv4()}`)
 })
-app.use(express.static(path.join(__dirname, './frontend')));
+
+app.get("/aiPlayer",(req,res)=>{
+    res.sendFile(path.join(__dirname,'./frontend/aiPlayer.html'))
+})
+
+ 
+app.get("/",(req,res)=>{
+    res.sendFile(path.join(__dirname,'./frontend/index.html'))
+})
+ 
+ 
 let secCheck;
 app.get("/:room", (req, res) => {
     roomID=req.params.room;
