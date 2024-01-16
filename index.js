@@ -17,8 +17,9 @@ app.get("/aiPlayer",(req,res)=>{
     res.sendFile(path.join(__dirname,'./frontend/aiPlayer.html'))
 })
 
- 
+let and;
 app.get("/",(req,res)=>{
+    and=req.ip;
     console.log(req.ip)
     res.sendFile(path.join(__dirname,'./frontend/index.html'))
 })
@@ -128,4 +129,5 @@ io.on("connection", (socket) => {
 
 http_server.listen(3000, () => {
     console.log("server is running on 3000");
+    console.log(and)
 })
