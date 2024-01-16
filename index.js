@@ -19,6 +19,7 @@ app.get("/aiPlayer",(req,res)=>{
 
  
 app.get("/",(req,res)=>{
+    console.log(req.ip)
     res.sendFile(path.join(__dirname,'./frontend/index.html'))
 })
  
