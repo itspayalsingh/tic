@@ -140,7 +140,7 @@ table tr td:last-child {
 .alert{
   display: none ;
   position: absolute;
-  margin-top: -100px;
+  margin-top: -250px;
   backdrop-filter: blur(2px);
   background-color: #90898971;
   padding: 10px;
