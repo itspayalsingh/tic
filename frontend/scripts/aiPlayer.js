@@ -175,6 +175,7 @@ function minimax(newBoard, player) {
   return moves[bestMove];
 }
  
+
 setTimeout(() => {
   document.querySelector(".alert").style.display="block"
 }, 3000);

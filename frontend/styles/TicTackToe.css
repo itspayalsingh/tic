@@ -8,6 +8,7 @@
      #main {
          display: none;
          /* display: flex; */
+         height: 100vh;
          background-image: url("https://e1.pxfuel.com/desktop-wallpaper/513/414/desktop-wallpaper-clean-water-water.jpg");
          /* background-repeat: no-repeat; */
          background-size: cover;
@@ -20,15 +21,16 @@
 
      #tictack {
          /* border: 1px solid rgb(244, 239, 238); */
-         height: 98vh;
-         /* width: 50%; */
+         height: 99vh;
+         width: 200px;
          flex-grow: 1;
      }
 
      table {
          /* border: 2px solid blue; */
          height: 200px;
-         width: 200px
+         width: 200px;
+         /* margin-top: 100px; */
      }
 
      td {
@@ -54,7 +56,7 @@
          /* border: 2px solid rgb(191, 234, 37); */
          /* width: 50%; */
          flex-grow: 1;
-         height: 98vh;
+         height: 99vh;
      }
 
      #chatNav {
@@ -87,8 +89,8 @@
 
      #input {
          /* border: 3px solid red; */
-         margin-top: 2%;
-         height: 7%;
+         margin-top: 1%;
+         height: 50px;
          justify-content: space-between;
      }
 
@@ -120,7 +122,7 @@
 
      #chatCont {
          /* border: 2px solid red; */
-         height: 550px;
+         height: 500px;
          overflow-y: scroll;
      }
 
@@ -140,6 +142,7 @@
          height: 100vh;
          color: white;
          display: grid;
+         /* display: none;  */
          place-items: center;
 
      }
@@ -423,8 +426,8 @@ td {
 }
 
 table {
-    margin-top: 150px;
-    width: 70%;
+    /* margin-top: 150px; */
+    width: 400px;
     background-color: rgba(202, 173, 173, 0.197);
     backdrop-filter: blur(6px);
     color: rgb(3, 2, 2);
@@ -475,7 +478,7 @@ table {
     /* background-color: rgba(191, 170, 170, 0.131);  */
     background-color: #90898942;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50px;
     border-radius: 1.5rem;
     border: 0.5px solid rgb(14, 13, 13);

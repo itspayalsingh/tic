@@ -1,4 +1,5 @@
-let moment= require("moment")
+let moment= require("moment-timezone")
+// npm i moment-timezone
 let users=[]
 let userJoin=(roomId, peerId, Username,socketId)=>{
   let user={
@@ -35,7 +36,7 @@ let format=(username,msg)=>{
     return {
         username,
         msg,
-        time:moment().format('h:mm a')
+        time:moment().tz('Asia/Kolkata').format('h:mm a')
     }
 }
 
